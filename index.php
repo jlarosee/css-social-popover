@@ -1,20 +1,21 @@
 <script src="https://use.fontawesome.com/40a93423bf.js"></script>
 
 <style>
+
 .content {
-	padding: 20px;
-	height: 100%;
-	width: 100%;
-	background: #efefef;
-	text-align: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    background: #efefef;
+    text-align: center;
 }
 .popover__title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  color: rgb(228, 68, 68);
-  text-align: center;
-  padding: 15px 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(228, 68, 68);
+    text-align: center;
+    padding: 15px 0;
 }
 .popover__wrapper {
     position: relative;
@@ -33,17 +34,17 @@
     width: auto; 
 }
 .popover__content ul {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 .popover__content ul li {
-	display: inline-block;
-	margin: 10px;
-	font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
 }
 .popover__content ul li a {
-	color: #fff;
+    color: #fff;
 }
 .popover__content:before {
     position: absolute;
@@ -65,17 +66,18 @@
     transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
 .popover__message {
-  	text-align: center;
+    text-align: center;
 }
+
 </style>
 
 
 <?php
 
 $social_links = [
-	['icon' => 'facebook', 'link' => 'https://facebook.com'],
-	['icon' => 'twitter', 'link' => 'https://twitter.com'],
-	['icon' => 'pinterest', 'link' => 'https://pinterest.com'],
+    ['icon' => 'facebook', 'link' => 'https://facebook.com'],
+    ['icon' => 'twitter', 'link' => 'https://twitter.com'],
+    ['icon' => 'pinterest', 'link' => 'https://pinterest.com'],
 ];
 
 ?>
@@ -83,15 +85,15 @@ $social_links = [
 
 <div class="content">
 
-	<div class="popover__wrapper">
-		<h2 class="popover__title">Go-Go Social</h2>
-	 	<div class="push popover__content">
-	 		<ul>
-	  		<?php foreach($social_links as $social) : ?>
-	  			<li><a href="<?php echo $social['link']; ?>" target="_blank"><i class="fa fa-<?php echo $social['icon']; ?>"></i></a></li>
-	  		<?php endforeach; ?>
-	  		</ul>
-	  	</div>
-	</div>
+    <div class="popover__wrapper">
+        <h2 class="popover__title">Go-Go Social</h2>
+        <div class="push popover__content">
+            <ul>
+            <?php foreach($social_links as $social) : ?>
+                <li><a href="<?php echo $social['link']; ?>" target="_blank"><i class="fa fa-<?php echo $social['icon']; ?>"></i></a></li>
+            <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
 
 </div>
